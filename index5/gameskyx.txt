@@ -1,0 +1,3 @@
+kyx5/games.kyx#Benchmarks/Games/Dual Filibuster Game;60;0
+kyx5/games.kyx#Benchmarks/Games/Push-around cart;60;0
+kyx5/games.kyx#Benchmarks/Games/Goalie in robot soccer;60;0

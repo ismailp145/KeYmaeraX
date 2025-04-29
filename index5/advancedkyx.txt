@@ -1,0 +1,8 @@
+kyx5/advanced.kyx#Benchmarks/Advanced/ETCS: Essentials;300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/ETCS: Proposition 1 (Controllability);300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/ETCS: Proposition 4 (Reactivity);300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/ATC: 2 Aircraft Tangential Roundabout Maneuver;300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/ATC: 3 Aircraft Tangential Roundabout Maneuver;300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/ATC: 4 Aircraft Tangential Roundabout Maneuver;300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/Robot collision avoidance in two-dimensional space: Static safety;300;0
+kyx5/advanced.kyx#Benchmarks/Advanced/Robot collision avoidance in two-dimensional space: Passive safety;300;0

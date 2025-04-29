@@ -1,0 +1,142 @@
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ahmadi Parrilo Krstic;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Arrowsmith Place Fig_3_11 page 83;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Arrowsmith Place Fig_3_5e page 79;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ben Sassi Girard 20104 Moore-Greitzer Jet;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ben Sassi Girard Sankaranarayanan 2014 Fitzhugh-Nagumo;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Bhatia Szego Ex_2_4 page 68;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Collin Goriely page 60;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dai Gan Xia Zhan JSC14 Ex. 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dai Gan Xia Zhan JSC14 Ex. 5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Darboux Christoffel Int Goriely page 58;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017 Ex. 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_11;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_11b;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_15_i;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_15_ii;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_9;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 1_11a;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 1_9a;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 5_2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 5_2_ii;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Fitzhugh Nagumo Ben Sassi Girard 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Forsman Phd Ex 6_1 page 99;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Forsman Phd Ex 6_14 page 119;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Hamiltonian System 1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Hybrid Controller Mode 1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Hybrid Controller Mode 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Invariant Clusters Example 6;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Invariant Clusters Example 7;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Locally stable nonlinear system;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/MIT astronautics Lyapunov;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Man Maccallum Goriely Page 57;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Nonlinear Circuit Example 3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Nonlinear Circuit Example 4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Nonlinear Circuit RLC Circuit Oscillator;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Prajna PhD Thesis 2-4-1 Page 31 (Variant);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Stable Limit Cycle 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Example 6_3_2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Example 6_8_3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Exercise 6_1_5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Exercise 6_1_9 Dipole;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Exercise 6_6_1 Reversible System;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Exercise 6_6_2 Limit Cycle;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Strogatz Exercise 7_3_5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Unstable Unit Circle 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Wien bridge oscillator;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Wiggins Example 17_1_2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Wiggins Example 18_7_3_n;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C6;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C7;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C8;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Papachristodoulou Prajna 2002: Example 2 (Chemical Oscillator);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Prajna PhD Thesis 2-4-1 Page 31;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 1 (Variant);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 2 (Variant);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5 (Variant 1);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5 (Variant 2);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C1 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C2 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/3D Lotka Volterra (I);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/3D Lotka Volterra (II);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/3D Lotka Volterra (III);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Alongi Nelson Ex_4_1_9 page 143;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Constraint-based Example 8 (Phytoplankton Growth);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Invariant 3-dim sphere;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Invariant Clusters Example 4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Invariant Clusters Example 5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Looping Particle;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Shimizu Morioka System;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C3 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C4 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 7;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (Parametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=2s Variant s=1 r=1);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=0 s=0.33);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=0 s=0.33 Variant r=1);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=1 r=0);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=1 r=0 Variant s=1);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Coupled Spring-Mass System (I);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Coupled Spring-Mass System (II);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Damped Mathieu System;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Flight Maneuvers (I);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.3 Variant 1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.3 Variant 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C5 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C6;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C6 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Papachristodoulou Prajna 2002: Example 3 (Whirling Pendulum);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Lunar lander descent guidance (slow descent low thrust);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Lunar lander descent guidance (slow descent high thrust);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.13;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Space Craft: Collision Avoidance;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C7;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C7 (Nonparametric);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.6;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 8;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C9;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Collision Avoidance Maneuver (I);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ATC: 2 Aircraft Tangential Roundabout Maneuver (ODE);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Collision Avoidance Maneuver (II);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Collision Avoidance Maneuver (III);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Laub-Loomis;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Planar 2-body problem;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ZYLZCL Example C10;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ATC: 3 Aircraft Tangential Roundabout Maneuver (ODE);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/ATC: 4 Aircraft Tangential Roundabout Maneuver (ODE);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Arrowsmith Place Fig_3_5e page 79 and Dumortier Llibre Artes Ex. 10_9;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Ben Sassi Girard Sankaranarayanan 2014 Fitzhugh-Nagumo and Strogatz Example 6_8_3;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Dai Gan Xia Zhan JSC14 Ex. 2 and Fitzhugh Nagumo Ben Sassi Girard 2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Dai Gan Xia Zhan JSC14 Ex. 2 and Strogatz Exercise 6_6_1 Reversible System;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Dumortier Llibre Artes Ex. 1_11a and ZYLZCL Example C4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Forsman Phd Ex 6_1 page 99 and ZYLZCL Example C7;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Hamiltonian System 1 and Nonlinear Circuit Example 4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Man Maccallum Goriely Page 57 and ZYLZCL Example C1;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Arrowsmith Place Fig_3_5e page 79 and 3D Lotka Volterra (I);60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Darboux Christoffel Int Goriely page 58 and Invariant Clusters Example 5;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Djaballah Chapoutot Kieffer Bouissou 2015 Ex. 1 and Invariant Clusters Example 4;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Forsman Phd Ex 6_14 page 119 and ZYLZCL Example C2;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Locally stable nonlinear system and Invariant 3-dim sphere;60;0
+kyx5/nonlinear.kyx#Benchmarks/Nonlinear/Product of Invariant 3-dim sphere and Invariant Clusters Example 4;60;0
+

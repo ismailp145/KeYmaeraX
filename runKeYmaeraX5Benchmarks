@@ -1,0 +1,46 @@
+#!/bin/sh
+IFS=$'\r\n' GLOBIGNORE='*' command eval 'ENTRIES=($(cat ./index5/basickyx.txt) $(cat ./index5/gameskyx.txt) $(cat ./index5/nonlinearkyx.txt) $(cat ./index5/advancedkyx.txt))'
+
+rm -r ~/.keymaerax/cache/lemmadb/qecache
+
+# scripted category (S)
+for i in "${ENTRIES[@]}"; do
+    IFS=$';' read -ra ENTRY <<< "$i"
+    java -Dlog4j.configurationFile="log4j2-statistics-s.xml" -da -jar keymaerax.jar -launch -prove "${ENTRY[0]}" -timeout ${ENTRY[1]} -tacticName "Scripted proof" -tactic "autoClose"
+    rm -r ~/.keymaerax/cache/lemmadb/qecache
+done
+
+mv statistics-s.csv statistics-s-5.csv
+rm -r ~/.keymaerax/cache/lemmadb/user
+
+# hints category (H)
+for i in "${ENTRIES[@]}"; do
+    IFS=$';' read -ra ENTRY <<< "$i"
+    java -Dlog4j.configurationFile="log4j2-statistics-h.xml" -da -jar keymaerax.jar -launch -prove "${ENTRY[0]}" -timeout ${ENTRY[1]} -tactic "autoClose"
+    rm -r ~/.keymaerax/cache/lemmadb/qecache
+done
+
+mv statistics-h.csv statistics-h-5.csv
+rm -r ~/.keymaerax/cache/lemmadb/user
+
+# strip all hints
+java -da -jar keymaerax.jar -launch -convert stripHints "kyx5/advanced.kyx" -out "kyx5/advanced.kyx.stripped"
+java -da -jar keymaerax.jar -launch -convert stripHints "kyx5/basic.kyx" -out "kyx5/basic.kyx.stripped"
+java -da -jar keymaerax.jar -launch -convert stripHints "kyx5/games.kyx" -out "kyx5/games.kyx.stripped"
+java -da -jar keymaerax.jar -launch -convert stripHints "kyx5/nonlinear.kyx" -out "kyx5/nonlinear.kyx.stripped"
+
+# automated category (A)
+for i in "${ENTRIES[@]}"; do
+    IFS=$';' read -ra ENTRY <<< "$i"
+    FIND=".kyx"
+    REPLACE=".kyx.stripped"
+    STRIPPEDNAME=${ENTRY[0]//$FIND/$REPLACE}
+    echo $STRIPPEDNAME
+    java -Dlog4j.configurationFile="log4j2-statistics-a.xml" -da -jar keymaerax.jar -launch -prove "$STRIPPEDNAME" -timeout ${ENTRY[1]} -tactic "autoClose"
+    rm -r ~/.keymaerax/cache/lemmadb/qecache
+done
+
+mv statistics-a.csv statistics-a-5.csv
+rm -r ~/.keymaerax/cache/lemmadb/user
+
+echo "Done running examples"

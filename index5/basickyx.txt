@@ -1,0 +1,61 @@
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 1;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 2;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 3;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 4;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 5;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 6;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 7;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 8;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Static semantics correctness: Assignment 9;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Cascaded;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Single integrator time;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Single integrator;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Double integrator;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Triple integrator;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential decay (1);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential decay (2);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential decay (3);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential growth (1);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential growth (2);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential growth (4);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Exponential growth (5);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Rotational dynamics (1);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Rotational dynamics (2);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Rotational dynamics (3);60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Spiral to equilibrium;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Open cases;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Closed cases;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Conserved quantity;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Darboux equality;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Fractional Darboux equality;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Darboux inequality;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Bifurcation;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Nonlinear 1;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Nonlinear 2;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Nonlinear 4;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Nonlinear 5;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Riccati;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Dynamics: Nonlinear differential cut;60;0
+kyx5/basic.kyx#Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 1;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 2;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 3a;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 4a;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 4b;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 4c;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 5;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 6;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 7;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 9a;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 9b;60;0
+kyx5/basic.kyx#Benchmarks/Basic/STTT Tutorial: Example 10;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 1 Continuous car accelerates forward;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 2 Single car drives forward;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 3a event-triggered car drives forward;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 4a safe stopping of time-triggered car;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 4b progress of time-triggered car;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 4c relative safety of time-triggered car;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 5 Controllability Equivalence;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 6 MPC Acceleration Equivalence;60;0
+kyx5/basic.kyx#Benchmarks/Basic/LICS: Example 7 Model-Predictive Control Design Car;60;0
