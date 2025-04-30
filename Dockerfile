@@ -160,7 +160,7 @@ ADD runKeYmaeraX${KYX_VERSION_STRING}Benchmarks ./
 # TODO: 4/28/2025 Ensure this is correct
 WORKDIR /${USER_NAME}/
 # TODO: 4/28/2025 Ensure this is correct https://github.com/LS-Lab/KeYmaeraX-projects/releases/tag/arch2022
-RUN git clone -b ${ARCH_YEAR} --depth 1 https://github.com/LS-Lab/KeYmaeraX-projects.git
+RUN git clone --depth 1 https://github.com/LS-Lab/KeYmaeraX-projects.git
 
 RUN mkdir -p /${USER_NAME}/kyx${KYX_VERSION_STRING}/
 RUN cp KeYmaeraX-projects/benchmarks/*.kyx /${USER_NAME}/kyx${KYX_VERSION_STRING}/
