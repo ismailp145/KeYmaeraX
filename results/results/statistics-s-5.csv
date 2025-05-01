@@ -1,0 +1,6 @@
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Games/Dual Filibuster Game,Scripted proof,proved,60000,302,141,0,56,11
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Games/Push-around cart,Scripted proof,proved,60000,1235,732,0,875,27
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Games/Goalie in robot soccer,Scripted proof,proved,60000,5274,2483,0,4879,36
