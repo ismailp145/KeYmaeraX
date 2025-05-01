@@ -1,0 +1,2 @@
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Robertson Chemical Reaction;60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance);60;0
