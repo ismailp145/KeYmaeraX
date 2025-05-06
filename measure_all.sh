@@ -28,7 +28,7 @@ docker start kyx
 
 mkdir -p results
 
-docker exec -it -w /$user kyx bash "./runKeYmaeraX5Benchmarks"
+docker exec -i -w /$user kyx bash "./runKeYmaeraX5Benchmarks"
 docker exec -w /$user kyx bash -c "mkdir -p results; mv *.csv results"
 mkdir -p results
 docker cp kyx:/$user/results ./results

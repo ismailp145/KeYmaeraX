@@ -1,6 +1,426 @@
 Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
-Benchmarks/Games/Dual Filibuster Game,user,proved,60000,403,129,0,58,1
+Benchmarks/Basic/Static semantics correctness: Assignment 1,user,proved,60000,66,42,0,38,1
 Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
-Benchmarks/Games/Push-around cart,user,proved,60000,4979,2276,0,2020,1
+Benchmarks/Basic/Static semantics correctness: Assignment 2,user,proved,60000,140,69,0,114,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 3,user,proved,60000,216,71,0,154,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 4,user,proved,60000,741,116,0,576,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 5,user,proved,60000,56,0,0,33,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 6,user,proved,60000,128,76,0,134,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 7,user,proved,60000,887,171,0,753,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 8,user,proved,60000,1458,417,0,925,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 9,user,proved,60000,1249,393,0,492,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Cascaded,user,proved,60000,1771,641,0,1356,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Single integrator time,user,proved,60000,627,165,0,164,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Single integrator,user,proved,60000,576,89,0,152,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Double integrator,user,proved,60000,4426,1760,0,1325,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Triple integrator,user,proved,60000,5699,2535,0,878,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (1),user,proved,60000,690,207,0,144,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (2),user,proved,60000,720,213,0,144,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (3),user,proved,60000,773,233,0,199,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (1),user,proved,60000,625,134,0,194,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (2),user,proved,60000,3867,1699,0,389,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (4),user,proved,60000,1015,290,0,639,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (5),user,proved,60000,878,295,0,333,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (1),user,proved,60000,899,238,0,417,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (2),user,proved,60000,5336,1766,0,2075,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (3),user,proved,60000,1622,583,0,1345,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Spiral to equilibrium,user,proved,60000,1000,291,0,514,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Open cases,user,proved,60000,1330,565,0,480,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Closed cases,user,proved,60000,816,203,0,604,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Conserved quantity,user,proved,60000,3470,2718,0,513,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Darboux equality,user,proved,60000,872,254,0,506,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Fractional Darboux equality,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Darboux inequality,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Bifurcation,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators,user,proved,60000,5894,3130,0,2961,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 1,user,proved,60000,895,262,0,423,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 2,user,proved,60000,973,243,0,454,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 4,user,proved,60000,898,284,0,452,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 5,user,proved,60000,773,209,0,387,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Riccati,user,proved,60000,946,244,0,274,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear differential cut,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 1,user,proved,60000,643,152,0,220,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 2,user,proved,60000,1273,407,0,1910,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 3a,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4a,user,proved,60000,1186,366,0,1889,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4b,user,proved,60000,1091,306,0,1740,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4c,user,proved,60000,4486,2017,0,1455,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 5,user,proved,60000,2387,953,0,3725,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 6,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 7,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 9a,user,proved,60000,1030,347,0,547,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 9b,user,proved,60000,19432,6307,0,5022,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 10,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 1 Continuous car accelerates forward,user,proved,60000,279,8,0,174,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 2 Single car drives forward,user,proved,60000,1227,374,0,1791,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 3a event-triggered car drives forward,user,proved,60000,1145,347,0,1843,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 4a safe stopping of time-triggered car,user,proved,60000,2106,702,0,3486,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 4b progress of time-triggered car,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 4c relative safety of time-triggered car,user,proved,60000,4174,1650,0,9402,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 5 Controllability Equivalence,user,proved,60000,3903,1116,0,2979,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 6 MPC Acceleration Equivalence,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/LICS: Example 7 Model-Predictive Control Design Car,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Games/Dual Filibuster Game,user,proved,60000,164,25,0,58,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Games/Push-around cart,user,proved,60000,2249,792,0,2020,1
 Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
 Benchmarks/Games/Goalie in robot soccer,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ahmadi Parrilo Krstic,user,proved,60000,5512,2396,0,459,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Arrowsmith Place Fig_3_11 page 83,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Arrowsmith Place Fig_3_5e page 79,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ben Sassi Girard 20104 Moore-Greitzer Jet,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ben Sassi Girard Sankaranarayanan 2014 Fitzhugh-Nagumo,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Bhatia Szego Ex_2_4 page 68,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Collin Goriely page 60,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dai Gan Xia Zhan JSC14 Ex. 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dai Gan Xia Zhan JSC14 Ex. 5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Darboux Christoffel Int Goriely page 58,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017 Ex. 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_11,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_11b,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_15_i,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_15_ii,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 10_9,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 1_11a,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 1_9a,user,proved,60000,5955,3208,0,600,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 5_2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Dumortier Llibre Artes Ex. 5_2_ii,user,proved,60000,7450,3729,0,740,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Fitzhugh Nagumo Ben Sassi Girard 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Forsman Phd Ex 6_1 page 99,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Forsman Phd Ex 6_14 page 119,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Hamiltonian System 1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Hybrid Controller Mode 1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Hybrid Controller Mode 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Invariant Clusters Example 6,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Invariant Clusters Example 7,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Locally stable nonlinear system,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/MIT astronautics Lyapunov,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Man Maccallum Goriely Page 57,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Nonlinear Circuit Example 3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Nonlinear Circuit Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Nonlinear Circuit RLC Circuit Oscillator,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Prajna PhD Thesis 2-4-1 Page 31 (Variant),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Stable Limit Cycle 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Example 6_3_2,user,proved,60000,8541,4453,0,430,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Example 6_8_3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Exercise 6_1_5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Exercise 6_1_9 Dipole,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Exercise 6_6_1 Reversible System,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Exercise 6_6_2 Limit Cycle,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Strogatz Exercise 7_3_5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Unstable Unit Circle 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Wien bridge oscillator,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Wiggins Example 17_1_2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Wiggins Example 18_7_3_n,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C6,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C7,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C8,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Papachristodoulou Prajna 2002: Example 2 (Chemical Oscillator),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Prajna PhD Thesis 2-4-1 Page 31,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 1 (Variant),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 2 (Variant),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5 (Variant 1),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Ferragut Giacomini 2010: Example 5 (Variant 2),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C1,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C1 (Nonparametric),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C2 (Nonparametric),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/3D Lotka Volterra (I),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/3D Lotka Volterra (II),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/3D Lotka Volterra (III),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Alongi Nelson Ex_4_1_9 page 143,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Constraint-based Example 8 (Phytoplankton Growth),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Invariant 3-dim sphere,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Invariant Clusters Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Invariant Clusters Example 5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Looping Particle,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Shimizu Morioka System,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C3,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C3 (Nonparametric),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C4 (Nonparametric),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.2,user,proved,60000,1135,379,0,559,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.5 Variant 3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 7,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (Parametric),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=2s Variant s=1 r=1),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=0 s=0.33),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=0 s=0.33 Variant r=1),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=1 r=0),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Llibre Zhang 2002: Lorenz System (p. 1623 b=1 r=0 Variant s=1),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Coupled Spring-Mass System (I),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Coupled Spring-Mass System (II),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Damped Mathieu System,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Flight Maneuvers (I),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.3 Variant 1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.3 Variant 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C5,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C5 (Nonparametric),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C6,user,proved,60000,3153,2031,0,2781,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C6 (Nonparametric),user,proved,60000,2549,1407,0,1773,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Papachristodoulou Prajna 2002: Example 3 (Whirling Pendulum),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Lunar lander descent guidance (slow descent low thrust),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Lunar lander descent guidance (slow descent high thrust),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.13,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Space Craft: Collision Avoidance,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C7,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Yang Wu Lin 2020: Benchmark C7 (Nonparametric),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Gorbuzov Pranevich 2012: Example 1.6,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Djaballah Chapoutot Kieffer Bouissou 2017: Example 8,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C9,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Collision Avoidance Maneuver (I),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ATC: 2 Aircraft Tangential Roundabout Maneuver (ODE),user,proved,60000,13744,3102,0,3130,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Collision Avoidance Maneuver (II),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Collision Avoidance Maneuver (III),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Laub-Loomis,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Planar 2-body problem,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ZYLZCL Example C10,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ATC: 3 Aircraft Tangential Roundabout Maneuver (ODE),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/ATC: 4 Aircraft Tangential Roundabout Maneuver (ODE),user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Arrowsmith Place Fig_3_5e page 79 and Dumortier Llibre Artes Ex. 10_9,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Ben Sassi Girard Sankaranarayanan 2014 Fitzhugh-Nagumo and Strogatz Example 6_8_3,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Dai Gan Xia Zhan JSC14 Ex. 2 and Fitzhugh Nagumo Ben Sassi Girard 2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Dai Gan Xia Zhan JSC14 Ex. 2 and Strogatz Exercise 6_6_1 Reversible System,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Dumortier Llibre Artes Ex. 1_11a and ZYLZCL Example C4,user,timeout,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Forsman Phd Ex 6_1 page 99 and ZYLZCL Example C7,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Hamiltonian System 1 and Nonlinear Circuit Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Man Maccallum Goriely Page 57 and ZYLZCL Example C1,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Arrowsmith Place Fig_3_5e page 79 and 3D Lotka Volterra (I),user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Darboux Christoffel Int Goriely page 58 and Invariant Clusters Example 5,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Djaballah Chapoutot Kieffer Bouissou 2015 Ex. 1 and Invariant Clusters Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Forsman Phd Ex 6_14 page 119 and ZYLZCL Example C2,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Locally stable nonlinear system and Invariant 3-dim sphere,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Nonlinear/Product of Invariant 3-dim sphere and Invariant Clusters Example 4,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ETCS: Essentials,user,proved,300000,2273,840,0,3533,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ETCS: Proposition 1 (Controllability),user,proved,300000,7030,2911,0,3679,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ETCS: Proposition 4 (Reactivity),user,timeout,300000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ATC: 2 Aircraft Tangential Roundabout Maneuver,user,proved,300000,14255,3137,0,3671,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ATC: 3 Aircraft Tangential Roundabout Maneuver,user,timeout,300000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/ATC: 4 Aircraft Tangential Roundabout Maneuver,user,timeout,300000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/Robot collision avoidance in two-dimensional space: Static safety,user,failed,300000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Advanced/Robot collision avoidance in two-dimensional space: Passive safety,user,failed,300000,-1,-1,-1,-1,-1

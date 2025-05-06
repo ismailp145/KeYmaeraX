@@ -1,0 +1,90 @@
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 1,user,proved,60000,64,33,0,38,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 2,user,proved,60000,155,83,0,114,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 3,user,proved,60000,188,72,0,154,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 4,user,proved,60000,735,107,0,576,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 5,user,proved,60000,72,0,0,33,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 6,user,proved,60000,149,99,0,134,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 7,user,proved,60000,979,243,0,944,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 8,user,proved,60000,1431,420,0,925,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Static semantics correctness: Assignment 9,user,proved,60000,965,259,0,490,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Cascaded,user,proved,60000,1839,612,0,1656,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Single integrator time,user,proved,60000,674,151,0,164,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Single integrator,user,proved,60000,643,89,0,152,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Double integrator,user,proved,60000,4387,1639,0,1325,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Triple integrator,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (1),user,proved,60000,893,284,0,318,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (2),user,proved,60000,930,289,0,318,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential decay (3),user,proved,60000,989,316,0,377,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (1),user,proved,60000,659,137,0,307,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (2),user,proved,60000,986,287,0,523,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (4),user,proved,60000,1203,390,0,813,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Exponential growth (5),user,proved,60000,968,319,0,506,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (1),user,proved,60000,962,286,0,678,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (2),user,proved,60000,3026,1053,0,3517,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Rotational dynamics (3),user,proved,60000,1717,666,0,2245,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Spiral to equilibrium,user,proved,60000,1152,360,0,782,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Open cases,user,proved,60000,1329,523,0,837,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Closed cases,user,proved,60000,883,193,0,604,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Conserved quantity,user,proved,60000,3758,2926,0,513,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Darboux equality,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Fractional Darboux equality,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Darboux inequality,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Bifurcation,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators,user,proved,60000,2520,983,0,1414,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 1,user,proved,60000,971,291,0,423,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 2,user,proved,60000,986,227,0,454,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 4,user,proved,60000,892,281,0,452,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Nonlinear 5,user,proved,60000,818,192,0,387,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Dynamics: Riccati,user,proved,60000,994,251,0,274,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 1,user,proved,60000,768,217,0,220,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 2,user,proved,60000,1232,387,0,1910,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 3a,user,failed,60000,-1,-1,-1,-1,-1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4a,user,proved,60000,1117,328,0,1889,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4b,user,proved,60000,1038,285,0,1740,1
+Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
+Benchmarks/Basic/STTT Tutorial: Example 4c,user,failed,60000,-1,-1,-1,-1,-1
