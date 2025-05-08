@@ -35,7 +35,7 @@ case "${unameOut}" in
 esac
 echo "Running on $machine"
 case "$machine" in
-  Linux)  ethif=eth0;;
+  Linux)  ethif=ens3;;
   Mac)    ethif=en0;;
 esac
 
@@ -54,6 +54,7 @@ if [ -z "$macaddr" ]
 then
   macaddr="$(ifconfig $ethif | grep -o -E '([[:xdigit:]]{1,2}:){5}[[:xdigit:]]{1,2}')"
   if [ -z "$macaddr" ]
+
   then
     echo "Failed to detect \$macaddr for setup and licenses. Provide MAC address with -m."
     exit 1
@@ -104,12 +105,12 @@ docker start kyx
 # install_packages_cmd="\"addpath /$user/mpm-3.1.0/;mpm install sedumi -u https://github.com/sqlp/sedumi.git -t v1.3.5;addpath(genpath('/$user/SOSTOOLS-4.01'));savepath;quit\""
 # docker exec -it kyx bash -c "matlab -r $install_packages_cmd"
 
-# # activate Wolfram Engine, comment out or abort this step with Ctrl-d to re-initialize the container
-# # if Wolfram Engine was activated earlier already
-# echo ""
-# echo "If you want to re-initialize the container but keep an earlier Wolfram Engine license: abort Wolfram Engine activation with Ctrl-d and comment out line 96 of setup.sh"
-# echo ""
-# docker exec -it kyx wolframscript "-activate"
+# activate Wolfram Engine, comment out or abort this step with Ctrl-d to re-initialize the container
+# if Wolfram Engine was activated earlier already
+echo ""
+echo "If you want to re-initialize the container but keep an earlier Wolfram Engine license: abort Wolfram Engine activation with Ctrl-d and comment out line 96 of setup.sh"
+echo ""
+docker exec -it kyx wolframscript "-activate"
 
 # # uncomment below to run with locally compiled jar
 # #sbt clean assembly
@@ -121,20 +122,29 @@ docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
 docker exec -it kyx bash -c 'rm .keymaerax/keymaerax.conf;cp keymaerax.conf .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/Executables/MathKernel" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_TCPIP = false" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/Executables/MathKernel" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_TCPIP = false" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx bash -c 'echo "IS_DOCKER = true" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax/keymaerax.conf
-# docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
-# docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
+docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax/keymaerax.conf
+docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
+docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
 
 # # # modify MATLink build file
 # # docker exec -it kyx sed -i "s/-lML64i3/-lML64i4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 # # docker exec -it kyx sed -i "s/CFLAGS = -Wall/CFLAGS = -Wall -DMX_COMPAT_32/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 # # docker exec -it kyx sed -i "s/DMLINTERFACE=3/DMLINTERFACE=4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 
+echo "entered init kyx with wolfram engine"
+# Rerunning lemma db with wolfram engine
+
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
+ 
+docker exec -it kyx bash -c 'mkdir foo'
+
+
 # # store the changes before exiting
 docker commit kyx
 
 docker stop kyx
+
