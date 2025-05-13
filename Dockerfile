@@ -99,9 +99,9 @@ RUN wget https://scala.jfrog.io/artifactory/debian/sbt-${SBT_VERSION}.deb && \
 # Install Wolfram Engine
 RUN sudo bash -c 'echo "en_US.UTF-8 UTF-8" > /etc/locale.gen' && \
   sudo locale-gen
-# RUN wget -O wolframengine "https://account.wolfram.com/dl/WolframEngine?version=14.2.1&platform=Linux&downloadManager=false&includesDocumentation=false" && \
-#   sudo bash wolframengine -- -auto -verbose && \
-#   rm wolframengine
+RUN wget -O wolframengine "https://account.wolfram.com/dl/WolframEngine?version=14.2.1&platform=Linux&downloadManager=false&includesDocumentation=false" && \
+   sudo bash wolframengine -- -auto -verbose && \
+   rm wolframengine
 # RUN wget -O wolframengine "https://account.wolfram.com/dl/WolframEngine?version=14.2.1&platform=Linux&downloadManager=false&includesDocumentation=false"
 # RUN sudo bash wolframengine -- -auto -verbose -silent
 # RUN sudo bash wolframengine -- -verbose 
@@ -123,7 +123,7 @@ RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/ke
 # # Build KeYmaera X at commit
 # WORKDIR /${USER_NAME}/KeYmaeraX-release/
 # RUN git checkout 5.1.1
-# RUN ls ${WOLFRAM_ENGINE_PATH} > weversion.txt
+#RUN ls ${WOLFRAM_ENGINE_PATH} > weversion.txt
 # RUN bash -l -c "echo \"mathematica.jlink.path=${WOLFRAM_ENGINE_PATH}/"'$(<weversion.txt)/SystemFiles/Links/JLink/JLink.jar" > local.properties'
 # RUN sbt --mem 2048 'project core' clean assembly
 # RUN cp keymaerax-core/target/scala-2.13/keymaerax-core*.jar /${USER_NAME}/keymaerax.jar
@@ -146,8 +146,8 @@ RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/ke
 # #   sudo rm -rf /var/lib/apt/lists/*
 
 # # Export Wolfram Engine version for dockersetup.sh and path for dockerrun.sh
-# RUN ls ${WOLFRAM_ENGINE_PATH} > weversion.txt
-# RUN bash -l -c "echo \"${WOLFRAM_ENGINE_PATH}/"'$(<weversion.txt)/Executables" > wepath.txt'
+RUN ls ${WOLFRAM_ENGINE_PATH} > weversion.txt
+RUN bash -l -c "echo \"${WOLFRAM_ENGINE_PATH}/"'$(<weversion.txt)/Executables" > wepath.txt'
 
 # # Import benchmark index and script
 # TODO: 4/28/2025 Ensure this is correct

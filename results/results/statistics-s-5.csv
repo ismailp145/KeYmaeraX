@@ -1,4 +1,4 @@
 Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
-Benchmarks/Nonlinear/Robertson Chemical Reaction,Scripted proof,proved,60000,551,247,0,326,2
+Benchmarks/Nonlinear/Robertson Chemical Reaction,Scripted proof,proved,60000,396,183,0,326,2
 Name,Tactic,Status,Timeout,Duration,QE duration,RCF duration,Proof steps,Tactic size
-Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance),Scripted proof,failed,60000,-1,-1,-1,-1,-1
+Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance),Scripted proof,proved,60000,6435,3702,0,738,7

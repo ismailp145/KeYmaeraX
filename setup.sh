@@ -35,7 +35,7 @@ case "${unameOut}" in
 esac
 echo "Running on $machine"
 case "$machine" in
-  Linux)  ethif=eth0;;
+  Linux)  ethif=ens3;;
   Mac)    ethif=en0;;
 esac
 
@@ -98,6 +98,7 @@ docker create --platform linux/amd64 \
   --mac-address $macaddr -it \
   -v $PWD/Licensing:/$user/.WolframEngine/Licensing \
   -w /$user/ -p 8090:8090 --name kyx keymaerax bash
+
 docker start kyx
 
 # install MATLAB packages
@@ -121,13 +122,45 @@ docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
 docker exec -it kyx bash -c 'rm .keymaerax/keymaerax.conf;cp keymaerax.conf .keymaerax/keymaerax.conf'
+
 docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/Executables/MathKernel" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_TCPIP = false" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx bash -c 'echo "IS_DOCKER = true" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax/keymaerax.conf
+
 docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
+
 docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
+docker exec -it kyx bash -c "cat .keymaerax/keymaerax.conf"
+
+# --------  NEW BLOCK  --------------------------------------- #
+#docker exec kyx bash -c '
+ # set -e
+ # conf=$HOME/.keymaerax/keymaerax.conf
+
+  # detect the single directory under /usr/local/Wolfram/WolframEngine
+#  ver=$(ls /usr/local/Wolfram/WolframEngine | head -n 1)
+
+  # add (or update) Wolfram-specific settings
+ # grep -q "^WOLFRAMENGINE_LINK_NAME"   "$conf" || \
+  #  echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$ver/Executables/math" \
+   # >> "$conf"
+
+ # grep -q "^WOLFRAMENGINE_JLINK_LIB_DIR" "$conf" || \
+  #  echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$ver/SystemFiles/Links/JLink" \
+   # >> "$conf"
+
+  #grep -q "^WOLFRAMENGINE_TCPIP" "$conf" || \
+   # echo "WOLFRAMENGINE_TCPIP = false" >> "$conf"
+
+ # grep -q "^IS_DOCKER" "$conf" || \
+  #  echo "IS_DOCKER = true" >> "$conf"
+
+  # make Wolfram Engine the default QE tool
+ # sed -i "s|^QE_TOOL .*|QE_TOOL = wolframengine|" "$conf"
+#'
+# ---- end of NEW BLOCK ------------------------------------ #
 
 # # # modify MATLink build file
 # # docker exec -it kyx sed -i "s/-lML64i3/-lML64i4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
@@ -135,7 +168,7 @@ docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keyma
 # # docker exec -it kyx sed -i "s/DMLINTERFACE=3/DMLINTERFACE=4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 
 # Rerunning lemma db with wolfram engine
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup -tool mathematica'
 
 # # store the changes before exiting
 docker commit kyx
