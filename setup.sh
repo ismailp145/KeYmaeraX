@@ -81,10 +81,10 @@ chmod -R 757 "$PWD/Licensing"
 
 
 # TODO: WORK IN PROGRESS Removed this for now
-# docker rm -f kyx
+docker rm -f kyx
 # docker build --build-arg LICENSE_FILE=matlab.lic --build-arg USER_NAME=$user -t keymaerax .
-# docker create --mac-address $macaddr -it -v $PWD/Licensing:/$user/.WolframEngine/Licensing -w /$user/ -p 8090:8090 --name kyx keymaerax bash
-# docker start kyx
+docker create --mac-address $macaddr -it -v $PWD/Licensing:/$user/.WolframEngine/Licensing -w /$user/ -p 8090:8090 --name kyx keymaerax bash
+docker start kyx
 
 # TODO: 4/28/2025 Ensure this is correct
 # Quickest way to make your embedded Z3 match the container’s architecture on Apple-Silicon
@@ -104,12 +104,12 @@ docker start kyx
 # install_packages_cmd="\"addpath /$user/mpm-3.1.0/;mpm install sedumi -u https://github.com/sqlp/sedumi.git -t v1.3.5;addpath(genpath('/$user/SOSTOOLS-4.01'));savepath;quit\""
 # docker exec -it kyx bash -c "matlab -r $install_packages_cmd"
 
-# # activate Wolfram Engine, comment out or abort this step with Ctrl-d to re-initialize the container
-# # if Wolfram Engine was activated earlier already
-# echo ""
-# echo "If you want to re-initialize the container but keep an earlier Wolfram Engine license: abort Wolfram Engine activation with Ctrl-d and comment out line 96 of setup.sh"
-# echo ""
-# docker exec -it kyx wolframscript "-activate"
+# activate Wolfram Engine, comment out or abort this step with Ctrl-d to re-initialize the container
+# if Wolfram Engine was activated earlier already
+echo ""
+echo "If you want to re-initialize the container but keep an earlier Wolfram Engine license: abort Wolfram Engine activation with Ctrl-d and comment out line 96 of setup.sh"
+echo ""
+docker exec -it kyx wolframscript "-activate"
 
 # # uncomment below to run with locally compiled jar
 # #sbt clean assembly
@@ -121,20 +121,25 @@ docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
 docker exec -it kyx bash -c 'rm .keymaerax/keymaerax.conf;cp keymaerax.conf .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/Executables/MathKernel" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_TCPIP = false" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/Executables/MathKernel" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$(<weversion.txt)/SystemFiles/Links/JLink/SystemFiles/Libraries/Linux-x86-64" >> .keymaerax/keymaerax.conf'
+docker exec -it kyx bash -c 'echo "WOLFRAMENGINE_TCPIP = false" >> .keymaerax/keymaerax.conf'
 docker exec -it kyx bash -c 'echo "IS_DOCKER = true" >> .keymaerax/keymaerax.conf'
-# docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax/keymaerax.conf
-# docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
-# docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
+docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax/keymaerax.conf
+docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
+docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
 
 # # # modify MATLink build file
 # # docker exec -it kyx sed -i "s/-lML64i3/-lML64i4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 # # docker exec -it kyx sed -i "s/CFLAGS = -Wall/CFLAGS = -Wall -DMX_COMPAT_32/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 # # docker exec -it kyx sed -i "s/DMLINTERFACE=3/DMLINTERFACE=4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
 
+# Rerunning lemma db with wolfram engine
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup'
+
 # # store the changes before exiting
 docker commit kyx
+
+
 
 docker stop kyx
