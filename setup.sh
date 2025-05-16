@@ -80,15 +80,11 @@ mkdir -p Licensing
 chmod -R 757 "$PWD/Licensing"
 
 
-# TODO: WORK IN PROGRESS Removed this for now
+
 docker rm -f kyx
-# docker build --build-arg LICENSE_FILE=matlab.lic --build-arg USER_NAME=$user -t keymaerax .
 docker create --mac-address $macaddr -it -v $PWD/Licensing:/$user/.WolframEngine/Licensing -w /$user/ -p 8090:8090 --name kyx keymaerax bash
 docker start kyx
 
-# TODO: 4/28/2025 Ensure this is correct
-# Quickest way to make your embedded Z3 match the container’s architecture on Apple-Silicon
-# AMD instead of ARM?
 docker rm -f kyx
 docker build --platform linux/amd64 \
   --build-arg LICENSE_FILE=matlab.lic \
@@ -101,9 +97,7 @@ docker create --platform linux/amd64 \
 
 docker start kyx
 
-# install MATLAB packages
-# install_packages_cmd="\"addpath /$user/mpm-3.1.0/;mpm install sedumi -u https://github.com/sqlp/sedumi.git -t v1.3.5;addpath(genpath('/$user/SOSTOOLS-4.01'));savepath;quit\""
-# docker exec -it kyx bash -c "matlab -r $install_packages_cmd"
+
 
 # activate Wolfram Engine, comment out or abort this step with Ctrl-d to re-initialize the container
 # if Wolfram Engine was activated earlier already
@@ -134,45 +128,10 @@ docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
 docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
 docker exec -it kyx bash -c "cat .keymaerax/keymaerax.conf"
 
-# --------  NEW BLOCK  --------------------------------------- #
-#docker exec kyx bash -c '
- # set -e
- # conf=$HOME/.keymaerax/keymaerax.conf
-
-  # detect the single directory under /usr/local/Wolfram/WolframEngine
-#  ver=$(ls /usr/local/Wolfram/WolframEngine | head -n 1)
-
-  # add (or update) Wolfram-specific settings
- # grep -q "^WOLFRAMENGINE_LINK_NAME"   "$conf" || \
-  #  echo "WOLFRAMENGINE_LINK_NAME = /usr/local/Wolfram/WolframEngine/$ver/Executables/math" \
-   # >> "$conf"
-
- # grep -q "^WOLFRAMENGINE_JLINK_LIB_DIR" "$conf" || \
-  #  echo "WOLFRAMENGINE_JLINK_LIB_DIR = /usr/local/Wolfram/WolframEngine/$ver/SystemFiles/Links/JLink" \
-   # >> "$conf"
-
-  #grep -q "^WOLFRAMENGINE_TCPIP" "$conf" || \
-   # echo "WOLFRAMENGINE_TCPIP = false" >> "$conf"
-
- # grep -q "^IS_DOCKER" "$conf" || \
-  #  echo "IS_DOCKER = true" >> "$conf"
-
-  # make Wolfram Engine the default QE tool
- # sed -i "s|^QE_TOOL .*|QE_TOOL = wolframengine|" "$conf"
-#'
-# ---- end of NEW BLOCK ------------------------------------ #
-
-# # # modify MATLink build file
-# # docker exec -it kyx sed -i "s/-lML64i3/-lML64i4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
-# # docker exec -it kyx sed -i "s/CFLAGS = -Wall/CFLAGS = -Wall -DMX_COMPAT_32/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
-# # docker exec -it kyx sed -i "s/DMLINTERFACE=3/DMLINTERFACE=4/g" .WolframEngine/Applications/MATLink/Engine/src/Makefile.lin64
-
 # Rerunning lemma db with wolfram engine
 docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup -tool mathematica'
 
-# # store the changes before exiting
+# store the changes before exiting
 docker commit kyx
-
-
 
 docker stop kyx
