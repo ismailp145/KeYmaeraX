@@ -1,6 +1,7 @@
 #!/bin/sh
 
-IFS=$'\r\n' GLOBIGNORE='*' command eval 'ENTRIES=($(cat ./index5/nonlinear2kyx.txt) )'
+IFS=$'\r\n' GLOBIGNORE='*' command eval 'ENTRIES=($(cat ./index5/basickyx.txt) $(cat ./index5/gameskyx.txt) $(cat ./index5/nonlinearkyx.txt) $(cat ./index5/advancedkyx.txt)) '
+
 
 rm -r ~/.keymaerax/cache/lemmadb/qecache
 
