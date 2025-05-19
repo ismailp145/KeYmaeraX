@@ -1,0 +1,3 @@
+benchmark,instance,result,time,comment
+Benchmarks/Nonlinear/Robertson Chemical Reaction,user,proved,3022,timeout=60000 | QE=1932 | RCF=0 | proof_steps=760 | tactic_size=1
+Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance),user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
