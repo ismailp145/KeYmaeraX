@@ -1,2 +1,7 @@
 kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Robertson Chemical Reaction;60;0
 kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance);60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Laub-Loomis;60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Laub-Loomis Taylor Model;60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Laub-Loomis Stability;60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Coupled van der Pol;60;0
+kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/SinCos Taylor Model;60;0
