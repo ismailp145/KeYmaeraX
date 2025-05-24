@@ -89,8 +89,9 @@ ADD runKeYmaeraX${KYX_VERSION_STRING}Benchmarks ./
 
 # # Pull KeYmaera X Projects
 WORKDIR /${USER_NAME}/
-RUN git clone https://github.com/LS-Lab/KeYmaeraX-projects.git
-RUN git checkout b9d7cb584e8fd1c3cc4f30644e82ba12cbb1d6fe
+RUN git clone https://github.com/LS-Lab/KeYmaeraX-projects.git \
+  && cd KeYmaeraX-projects \
+  && git checkout b9d7cb584e8fd1c3cc4f30644e82ba12cbb1d6fe
 
 RUN mkdir -p /${USER_NAME}/kyx${KYX_VERSION_STRING}/
 RUN cp KeYmaeraX-projects/benchmarks/*.kyx /${USER_NAME}/kyx${KYX_VERSION_STRING}/
