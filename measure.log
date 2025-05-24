@@ -1,0 +1,944 @@
+nohup: ignoring input
+
+*******************************************************************************
+KeYmaera X repeatability evaluation.
+*******************************************************************************
+
+kyx
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Robertson Chemical Reaction'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tacticName
+Error: Unknown argument 'Scripted proof'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance)'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tacticName
+Error: Unknown argument 'Scripted proof'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+mv: cannot stat 'statistics-s.csv': No such file or directory
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/user': No such file or directory
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Robertson Chemical Reaction'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance)'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+mv: cannot stat 'statistics-h.csv': No such file or directory
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/user': No such file or directory
+Error: Unknown option -launch
+Error: Unknown option -convert
+Error: Unknown argument 'stripHints'
+Error: Unknown argument 'kyx5/advanced.kyx'
+Error: Unknown option -out
+Error: Unknown argument 'kyx5/advanced.kyx.stripped'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+Error: Unknown option -launch
+Error: Unknown option -convert
+Error: Unknown argument 'stripHints'
+Error: Unknown argument 'kyx5/basic.kyx'
+Error: Unknown option -out
+Error: Unknown argument 'kyx5/basic.kyx.stripped'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+Error: Unknown option -launch
+Error: Unknown option -convert
+Error: Unknown argument 'stripHints'
+Error: Unknown argument 'kyx5/games.kyx'
+Error: Unknown option -out
+Error: Unknown argument 'kyx5/games.kyx.stripped'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+Error: Unknown option -launch
+Error: Unknown option -convert
+Error: Unknown argument 'stripHints'
+Error: Unknown argument 'kyx5/nonlinear.kyx'
+Error: Unknown option -out
+Error: Unknown argument 'kyx5/nonlinear.kyx.stripped'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+kyx5/nonlinear2.kyx.stripped#Benchmarks/Nonlinear/Robertson Chemical Reaction
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx.stripped#Benchmarks/Nonlinear/Robertson Chemical Reaction'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+kyx5/nonlinear2.kyx.stripped#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance)
+Error: Unknown option -launch
+Error: Unknown option -prove
+Error: Unknown argument 'kyx5/nonlinear2.kyx.stripped#Benchmarks/Nonlinear/Lotka-Volterra with tangential crossing (Invariance)'
+Error: Unknown option -timeout
+Error: Unknown argument '60'
+Error: Unknown option -tactic
+Error: Unknown argument 'autoClose'
+KeYmaera X 5.1.1
+Copyright (C) 2014-2024 Carnegie Mellon University, Karlsruhe Institute of Technology
+See --copyright, --license, and --third-party-licenses for more details.
+
+Usage: keymaerax-core [setup|prove|parse|bparse|convert|grade] [options] <args>...
+
+  -h, --help               Show this usage information.
+  --launch                 Use present JVM instead of launching one with a
+                           bigger stack.
+  --debug <value>          Enable/disable debug mode with exhaustive messages.
+  --jlink path/to/jlinkNativeLib
+                           Path to Mathematica J/Link library directory.
+  --jlinkinterface <format>
+                           Format for sending commands to Mathematica. Possible
+                           values: String (more robust), Expr (supports larger
+                           queries).
+  --jlinktcpip <bool>      Whether to connect to Mathematica with process
+                           communication or over TCP/IP (more robust). Default:
+                           false (unless configured in keymaerax.conf)
+  --lax <value>            true: Use lax mode with more flexible parser,
+                           printer, prover. false: Use strict mode with no
+                           flexibility in prover.
+  --mathkernel MathKernel(.exe)
+                           Path to Mathematica kernel executable.
+  --open <value>
+  --parallelqe <bool>      Whether to attempt multiple QE alternatives in
+                           parallel. Default: false (unless configured in
+                           keymaerax.conf)
+  --qemethod <method>      Quantifier elimination method to use. Possible
+                           values: Reduce (solves equations and eliminates
+                           quantifiers), Resolve (eliminates quantifiers).
+  --tool <name>            Choose which tool to use for real arithmetic.
+                           Possible values: Mathematica, WolframEngine,
+                           WolframScript, Z3.
+  --z3path path/to/z3      Path to Z3 executable.
+
+Command: setup
+Initialize the configuration and lemma cache.
+
+Command: prove [options] <in> [<out>]
+Run prover on given archive of models or proofs.
+  <in>                     Input archive file(s) (either a specific file or a
+                           wildcard, e.g. *.kyx).
+  <out>                    Output proof file (defaults to input file with .kyp
+                           suffix).
+  --pt-out <file>          Output proof term s-expression into a file.
+  --conjecture <file>      Conjecture file to replace the model in the input
+                           file with (either a specific file or a wildcard, e.g.
+                           *.kyx).
+  --tactic <file|tactic>   Either a file containing a tactic, or a parseable
+                           tactic. Used to prove the entry/entries in the input
+                           or conjecture file.
+  --tactic-name <name>     Which of the tactics in the input file to use
+                           (default: check all, falling back to auto if no
+                           tactic is listed). Only used if no tactic is
+                           specified.
+  --timeout <duration>     How long to try proving before giving up. Format:
+                           "<length><unit>" or "Inf". Available units: d (day),
+                           h (hour), m (minute), s (second), ms (millisecond).
+                           Default: Inf.
+  --verbose                Print verbose proof information.
+  --statistics <format>    How to print proof statistics. Possible values: Csv,
+                           ArchNlnCsv, ArchHstpCsv. Default: Csv.
+
+Command: parse <in>
+Return error code 0 if the given model file parses.
+  <in>                     Input file.
+
+Command: bparse <in>
+Return error code 0 if given bellerophon tactic file parses.
+  <in>                     Input file.
+
+Command: convert <conversion> <in> [<out>]
+Model conversions.
+  <conversion>             Conversion to perform. Possible values: KyxToMat,
+                           SmtToMat, KyxToSmt, SmtToKyx, StripHints.
+  <in>                     Input file.
+  <out>                    Output file.
+
+Command: grade [options] <in> [<out>]
+
+  <in>                     File to grade.
+  <out>                    Output directory for answer files.
+  --export-answers         Export answers to text files instead of grading.
+  --skip-on-parse-error    Skip grading on parse errors.
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/qecache': No such file or directory
+mv: cannot stat 'statistics-a.csv': No such file or directory
+rm: cannot remove '//ismail/.keymaerax/cache/lemmadb/user': No such file or directory
+Done running examples
+mv: cannot stat '*.csv': No such file or directory
