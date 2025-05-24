@@ -47,8 +47,7 @@ RUN apt-get --yes update && \
   apt-get autoremove && \
   rm -rf /var/lib/apt/lists/*
 
-# TODO: Review if this is needed 4/28/2025, installed Z3
-# Installed Z3
+# Install Z3
 RUN apt-get update && \
   apt-get install -y z3 && \
   rm -rf /var/lib/apt/lists/*
@@ -106,16 +105,15 @@ RUN sudo bash -c 'echo "en_US.UTF-8 UTF-8" > /etc/locale.gen' && \
 # RUN sudo bash wolframengine -- -auto -verbose -silent
 # RUN sudo bash wolframengine -- -verbose 
 
-# TODO: Conditionals to check system architecture
 # TODO: 5.1.1 Jar file and use Z3 instead.
 # # Pull KeYmaera X
 WORKDIR /${USER_NAME}/
-RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/keymaerax.jar"
+# RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/keymaerax.jar"
+COPY keymaerax-core-5.1.1.jar/ /${USER_NAME}keymaerax.jar
 # RUN cp keymaerax-core/target/scala-2.13/keymaerax-core*.jar /${USER_NAME}/keymaerax.jar
 
 # WORKDIR /${USER_NAME}/
 # avoid caching git clone by adding the latest commit SHA to the container
-# TODO: 4/28/2025 Do we need this if the git clone is already in the index?
 # this worked somewhat better? 
 # ADD https://api.github.com/repos/LS-Lab/KeYmaeraX-release/git/refs/heads/master kyx-version.json
 # RUN git clone -n https://github.com/LS-Lab/KeYmaeraX-release.git --recurse-submodules
@@ -150,17 +148,22 @@ RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/ke
 # RUN bash -l -c "echo \"${WOLFRAM_ENGINE_PATH}/"'$(<weversion.txt)/Executables" > wepath.txt'
 
 # # Import benchmark index and script
-# TODO: 4/28/2025 Ensure this is correct
+# Ensure this is correct
 WORKDIR /${USER_NAME}
 COPY index${KYX_VERSION_STRING}/ ./index${KYX_VERSION_STRING}/
 ADD *.xml ./
 ADD runKeYmaeraX${KYX_VERSION_STRING}Benchmarks ./
 
 # # Pull KeYmaera X Projects
-# TODO: 4/28/2025 Ensure this is correct
+#  Ensure this is correct
 WORKDIR /${USER_NAME}/
-# TODO: 4/28/2025 Ensure this is correct https://github.com/LS-Lab/KeYmaeraX-projects/releases/tag/arch2022
-RUN git clone --depth 1 https://github.com/LS-Lab/KeYmaeraX-projects.git
+#  Ensure this is correct https://github.com/LS-Lab/KeYmaeraX-projects/releases/tag/arch2022
+# RUN git clone --depth 1 https://github.com/LS-Lab/KeYmaeraX-projects.git
+
+# TODO: 5/22/2025 Ensure this is correct
+RUN git clone https://github.com/LS-Lab/KeYmaeraX-projects.git
+RUN git checkout b9d7cb584e8fd1c3cc4f30644e82ba12cbb1d6fe
+
 
 RUN mkdir -p /${USER_NAME}/kyx${KYX_VERSION_STRING}/
 RUN cp KeYmaeraX-projects/benchmarks/*.kyx /${USER_NAME}/kyx${KYX_VERSION_STRING}/

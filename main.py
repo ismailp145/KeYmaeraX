@@ -24,7 +24,7 @@ def process_csv(src_path: Path, dst_path: Path) -> None:
             if row_is_header(list(raw.values())):
                 # Skip duplicate header lines that sometimes appear in your file
                 continue
-
+            
             comment_parts = [
                 f'timeout={raw["Timeout"]}',
                 f'QE={raw["QE duration"]}',
