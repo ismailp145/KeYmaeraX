@@ -75,8 +75,6 @@ RUN wget -O wolframengine "https://account.wolfram.com/dl/WolframEngine?version=
 
 # # Pull KeYmaera X
 WORKDIR /${USER_NAME}/
-#RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/keymaerax.jar"
-# RUN cp keymaerax-core/target/scala-2.13/keymaerax-core*.jar /${USER_NAME}/keymaerax.jar
 COPY keymaerax-core-5.1.1.jar /${USER_NAME}/keymaerax.jar
 
 # # Export Wolfram Engine version for dockersetup.sh and path for dockerrun.sh
@@ -91,8 +89,6 @@ ADD runKeYmaeraX${KYX_VERSION_STRING}Benchmarks ./
 
 # # Pull KeYmaera X Projects
 WORKDIR /${USER_NAME}/
-#  https://github.com/LS-Lab/KeYmaeraX-projects/releases/tag/arch2022
-#RUN git clone --depth 1 https://github.com/LS-Lab/KeYmaeraX-projects.git
 RUN git clone https://github.com/LS-Lab/KeYmaeraX-projects.git \
   && cd KeYmaeraX-projects \
   && git checkout b9d7cb584e8fd1c3cc4f30644e82ba12cbb1d6fe

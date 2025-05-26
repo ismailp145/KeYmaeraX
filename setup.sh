@@ -111,7 +111,7 @@ docker exec -it kyx wolframscript "-activate"
 # #docker cp ./keymaerax-core/target/scala-2.13/keymaerax-core*.jar kyx:/$user/keymaerax.jar
 
 # # initialize .keymaerax directory with Z3
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch'
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar --launch -setup'
 
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
@@ -129,7 +129,7 @@ docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keyma
 docker exec -it kyx bash -c "cat .keymaerax/keymaerax.conf"
 
 # Rerunning lemma db with wolfram engine
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch -tool mathematica'
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -setup --launch --tool Mathematica'
 
 # store the changes before exiting
 docker commit kyx
