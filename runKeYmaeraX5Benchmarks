@@ -7,7 +7,7 @@ rm -r ~/.keymaerax/cache/lemmadb/qecache
 # scripted category (S)
 for i in "${ENTRIES[@]}"; do
     IFS=$';' read -ra ENTRY <<< "$i"
-    java -Dlog4j.configurationFile="log4j2-statistics-s.xml" -da -jar keymaerax.jar --launch prove "${ENTRY[0]}" --timeout ${ENTRY[1]} --tactic-name "Scripted proof" --tactic "autoClose"
+    java -Dlog4j.configurationFile="log4j2-statistics-s.xml" -da -jar keymaerax.jar --launch prove "${ENTRY[0]}" --timeout ${ENTRY[1]} --tactic-name "Scripted proof" --tactic --statistics ArchNlnCsv
     rm -r ~/.keymaerax/cache/lemmadb/qecache
 done
 
@@ -17,7 +17,7 @@ rm -r ~/.keymaerax/cache/lemmadb/user
 # hints category (H)
 for i in "${ENTRIES[@]}"; do
     IFS=$';' read -ra ENTRY <<< "$i"
-    java -Dlog4j.configurationFile="log4j2-statistics-h.xml" -da -jar keymaerax.jar --launch prove "${ENTRY[0]}" --timeout ${ENTRY[1]} --tactic "autoClose"
+    java -Dlog4j.configurationFile="log4j2-statistics-h.xml" -da -jar keymaerax.jar --launch prove "${ENTRY[0]}" --timeout ${ENTRY[1]} --tactic --statistics ArchNlnCsv
     rm -r ~/.keymaerax/cache/lemmadb/qecache
 done
 
@@ -37,7 +37,7 @@ for i in "${ENTRIES[@]}"; do
     REPLACE=".kyx.stripped"
     STRIPPEDNAME=${ENTRY[0]//$FIND/$REPLACE}
     echo $STRIPPEDNAME
-    java -Dlog4j.configurationFile="log4j2-statistics-a.xml" -da -jar keymaerax.jar --launch prove "$STRIPPEDNAME" --timeout ${ENTRY[1]} --tactic "autoClose"
+    java -Dlog4j.configurationFile="log4j2-statistics-a.xml" -da -jar keymaerax.jar --launch prove "$STRIPPEDNAME" --timeout ${ENTRY[1]} --tactic --statistics ArchNlnCsv
     rm -r ~/.keymaerax/cache/lemmadb/qecache
 done
 

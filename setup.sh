@@ -111,7 +111,7 @@ docker exec -it kyx wolframscript "-activate"
 # #docker cp ./keymaerax-core/target/scala-2.13/keymaerax-core*.jar kyx:/$user/keymaerax.jar
 
 # # initialize .keymaerax directory with Z3
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch '
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch --z3path .keymaerax/z3'
 
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
