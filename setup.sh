@@ -79,7 +79,10 @@ fi
 mkdir -p Licensing
 chmod -R 757 "$PWD/Licensing"
 
+#Sourcing wolfram credentials
 
+SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+source "${SCRIPT_DIR}/wolfram_creds.env"
 
 docker rm -f kyx
 docker create --mac-address $macaddr -it -v $PWD/Licensing:/$user/.WolframEngine/Licensing -w /$user/ -p 8090:8090 --name kyx keymaerax bash
@@ -104,14 +107,14 @@ docker start kyx
 echo ""
 echo "If you want to re-initialize the container but keep an earlier Wolfram Engine license: abort Wolfram Engine activation with Ctrl-d and comment out line 96 of setup.sh"
 echo ""
-docker exec -it kyx wolframscript "-activate"
 
-# # uncomment below to run with locally compiled jar
-# #sbt clean assembly
-# #docker cp ./keymaerax-core/target/scala-2.13/keymaerax-core*.jar kyx:/$user/keymaerax.jar
+#Activate wolfram using credentials
+docker exec -it kyx wolframscript -activate \
+    -username "${WOLFRAM_ID}" \
+    -password "${WOLFRAM_PWD}"
 
 # # initialize .keymaerax directory with Z3
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch'
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup '
 
 # # add and modify configuration
 docker cp ./keymaerax.math.conf kyx:/$user/keymaerax.conf
@@ -126,12 +129,50 @@ docker exec -it kyx sed -i "s/QE_TOOL = z3/QE_TOOL = wolframengine/g" .keymaerax
 docker inspect -f '{{ .NetworkSettings.IPAddress }}' kyx > dockerip.txt
 
 docker exec -it kyx sed -i "s/HOST = 127.0.0.1/HOST = $(<dockerip.txt)/g" .keymaerax/keymaerax.conf
-docker exec -it kyx bash -c "cat .keymaerax/keymaerax.conf"
 
 # Rerunning lemma db with wolfram engine
-docker exec -it kyx bash -c 'java -da -jar keymaerax.jar setup --launch -tool mathematica'
+docker exec -it kyx bash -c 'java -da -jar keymaerax.jar -launch -setup  -tool mathematica'
 
 # store the changes before exiting
 docker commit kyx
 
 docker stop kyx
+#!/bin/bash
+
+echo "
+*******************************************************************************
+KeYmaera X repeatability evaluation.
+*******************************************************************************
+"
+
+set -e
+
+while getopts "u:" flag; do
+    case $flag in
+        u) user=${OPTARG};;
+    esac
+done
+
+if [ -z "$user" ]
+then
+  user="$(whoami)"
+  if [ -z "$user" ]
+  then
+    echo "Failed to detect \$user for licenses. Provide username with -u."
+    exit 1
+  fi
+fi
+
+docker start kyx
+
+mkdir -p results
+
+docker exec -i -w /$user kyx bash "./runKeYmaeraX5Benchmarks"
+docker exec -w /$user kyx bash -c "mkdir -p results; mv *.csv results"
+mkdir -p results
+docker cp kyx:/$user/results ./results
+
+docker stop kyx
+#Python Script to clean up all the results
+#python main.py
+

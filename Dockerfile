@@ -75,9 +75,9 @@ RUN wget -O wolframengine "https://account.wolfram.com/dl/WolframEngine?version=
 
 # # Pull KeYmaera X
 WORKDIR /${USER_NAME}/
-#RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/keymaerax.jar"
+RUN wget "https://github.com/LS-Lab/KeYmaeraX-release/releases/download/5.1.1/keymaerax.jar"
 # RUN cp keymaerax-core/target/scala-2.13/keymaerax-core*.jar /${USER_NAME}/keymaerax.jar
-COPY keymaerax-core-5.1.1.jar /${USER_NAME}/keymaerax.jar
+# COPY keymaerax-core-5.1.1.jar /${USER_NAME}/keymaerax.jar
 
 # # Export Wolfram Engine version for dockersetup.sh and path for dockerrun.sh
 RUN ls ${WOLFRAM_ENGINE_PATH} > weversion.txt
