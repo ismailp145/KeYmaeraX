@@ -43,8 +43,8 @@ def process_csv(src_path: Path, dst_path: Path) -> None:
             )
 
 def main():
-    src = Path("/results/statistics-h-5.csv")  # original file
-    dst = Path("results.csv")  # new file
+    src = Path("results/results/statistics-h-5.csv")  # original file
+    dst = Path("results/results.csv")  # new file
     
     process_csv(src, dst)
     print(f"Wrote cleaned file to {dst.resolve()}")
