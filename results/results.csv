@@ -1,0 +1,184 @@
+benchmark,instance,result,time,comment
+Benchmarks/Basic/Static semantics correctness: Assignment 1,user,proved,226,timeout=60000 | QE=130 | RCF=0 | proof_steps=38 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 2,user,proved,314,timeout=60000 | QE=144 | RCF=0 | proof_steps=114 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 3,user,proved,551,timeout=60000 | QE=94 | RCF=0 | proof_steps=154 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 4,user,proved,805,timeout=60000 | QE=186 | RCF=0 | proof_steps=576 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 5,user,proved,123,timeout=60000 | QE=0 | RCF=0 | proof_steps=33 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 6,user,proved,1535,timeout=60000 | QE=1407 | RCF=0 | proof_steps=134 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 7,user,proved,878,timeout=60000 | QE=210 | RCF=0 | proof_steps=753 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 8,user,proved,1396,timeout=60000 | QE=288 | RCF=0 | proof_steps=925 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 9,user,proved,1382,timeout=60000 | QE=270 | RCF=0 | proof_steps=492 | tactic_size=1
+Benchmarks/Basic/Dynamics: Cascaded,user,proved,1506,timeout=60000 | QE=575 | RCF=0 | proof_steps=1356 | tactic_size=1
+Benchmarks/Basic/Dynamics: Single integrator time,user,proved,565,timeout=60000 | QE=210 | RCF=0 | proof_steps=164 | tactic_size=1
+Benchmarks/Basic/Dynamics: Single integrator,user,proved,567,timeout=60000 | QE=176 | RCF=0 | proof_steps=152 | tactic_size=1
+Benchmarks/Basic/Dynamics: Double integrator,user,proved,1510,timeout=60000 | QE=490 | RCF=0 | proof_steps=1330 | tactic_size=1
+Benchmarks/Basic/Dynamics: Triple integrator,user,proved,1712,timeout=60000 | QE=636 | RCF=0 | proof_steps=878 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (1),user,proved,716,timeout=60000 | QE=279 | RCF=0 | proof_steps=144 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (2),user,proved,714,timeout=60000 | QE=271 | RCF=0 | proof_steps=144 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (3),user,proved,715,timeout=60000 | QE=277 | RCF=0 | proof_steps=199 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (1),user,proved,608,timeout=60000 | QE=206 | RCF=0 | proof_steps=194 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (2),user,proved,1054,timeout=60000 | QE=331 | RCF=0 | proof_steps=389 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (4),user,proved,839,timeout=60000 | QE=449 | RCF=0 | proof_steps=165 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (5),user,proved,808,timeout=60000 | QE=317 | RCF=0 | proof_steps=333 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (1),user,proved,739,timeout=60000 | QE=270 | RCF=0 | proof_steps=417 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (2),user,proved,2565,timeout=60000 | QE=723 | RCF=0 | proof_steps=2075 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (3),user,proved,1342,timeout=60000 | QE=559 | RCF=0 | proof_steps=1345 | tactic_size=1
+Benchmarks/Basic/Dynamics: Spiral to equilibrium,user,proved,966,timeout=60000 | QE=382 | RCF=0 | proof_steps=514 | tactic_size=1
+Benchmarks/Basic/Dynamics: Open cases,user,proved,1176,timeout=60000 | QE=536 | RCF=0 | proof_steps=480 | tactic_size=1
+Benchmarks/Basic/Dynamics: Closed cases,user,proved,718,timeout=60000 | QE=276 | RCF=0 | proof_steps=426 | tactic_size=1
+Benchmarks/Basic/Dynamics: Conserved quantity,user,proved,970,timeout=60000 | QE=376 | RCF=0 | proof_steps=513 | tactic_size=1
+Benchmarks/Basic/Dynamics: Darboux equality,user,proved,794,timeout=60000 | QE=308 | RCF=0 | proof_steps=506 | tactic_size=1
+Benchmarks/Basic/Dynamics: Fractional Darboux equality,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Darboux inequality,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Bifurcation,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators,user,proved,45183,timeout=60000 | QE=2977 | RCF=0 | proof_steps=2587 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 1,user,proved,882,timeout=60000 | QE=304 | RCF=0 | proof_steps=423 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 2,user,proved,820,timeout=60000 | QE=311 | RCF=0 | proof_steps=454 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 4,user,proved,838,timeout=60000 | QE=328 | RCF=0 | proof_steps=452 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 5,user,proved,781,timeout=60000 | QE=282 | RCF=0 | proof_steps=387 | tactic_size=1
+Benchmarks/Basic/Dynamics: Riccati,user,proved,792,timeout=60000 | QE=298 | RCF=0 | proof_steps=274 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear differential cut,user,proved,3276,timeout=60000 | QE=619 | RCF=0 | proof_steps=927 | tactic_size=1
+Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism,user,timeout,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/STTT Tutorial: Example 1,user,proved,589,timeout=60000 | QE=217 | RCF=0 | proof_steps=220 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 2,user,proved,1724,timeout=60000 | QE=410 | RCF=0 | proof_steps=1910 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 3a,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/STTT Tutorial: Example 4a,user,proved,1579,timeout=60000 | QE=342 | RCF=0 | proof_steps=1889 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 4b,user,proved,1382,timeout=60000 | QE=312 | RCF=0 | proof_steps=1740 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 4c,user,proved,2237,timeout=60000 | QE=584 | RCF=0 | proof_steps=2185 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 5,user,proved,4279,timeout=60000 | QE=678 | RCF=0 | proof_steps=3725 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 6,user,proved,5411,timeout=60000 | QE=763 | RCF=0 | proof_steps=3763 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 7,user,proved,8430,timeout=60000 | QE=1036 | RCF=0 | proof_steps=3894 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 9a,user,proved,908,timeout=60000 | QE=421 | RCF=0 | proof_steps=547 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 9b,user,timeout,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/STTT Tutorial: Example 10,user,timeout,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 1 Continuous car accelerates forward,user,proved,224,timeout=60000 | QE=17 | RCF=0 | proof_steps=61 | tactic_size=1
+Benchmarks/Basic/LICS: Example 2 Single car drives forward,user,proved,1496,timeout=60000 | QE=332 | RCF=0 | proof_steps=1791 | tactic_size=1
+Benchmarks/Basic/LICS: Example 3a event-triggered car drives forward,user,proved,1563,timeout=60000 | QE=348 | RCF=0 | proof_steps=1843 | tactic_size=1
+Benchmarks/Basic/LICS: Example 4a safe stopping of time-triggered car,user,proved,4078,timeout=60000 | QE=601 | RCF=0 | proof_steps=3486 | tactic_size=1
+Benchmarks/Basic/LICS: Example 4b progress of time-triggered car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 4c relative safety of time-triggered car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 5 Controllability Equivalence,user,proved,3587,timeout=60000 | QE=748 | RCF=0 | proof_steps=2979 | tactic_size=1
+Benchmarks/Basic/LICS: Example 6 MPC Acceleration Equivalence,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 7 Model-Predictive Control Design Car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Static semantics correctness: Assignment 1,user,proved,220,timeout=60000 | QE=119 | RCF=0 | proof_steps=38 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 2,user,proved,292,timeout=60000 | QE=132 | RCF=0 | proof_steps=114 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 3,user,proved,352,timeout=60000 | QE=136 | RCF=0 | proof_steps=154 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 4,user,proved,748,timeout=60000 | QE=186 | RCF=0 | proof_steps=576 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 5,user,proved,118,timeout=60000 | QE=0 | RCF=0 | proof_steps=33 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 6,user,proved,1517,timeout=60000 | QE=1365 | RCF=0 | proof_steps=134 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 7,user,proved,905,timeout=60000 | QE=273 | RCF=0 | proof_steps=970 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 8,user,proved,1142,timeout=60000 | QE=315 | RCF=0 | proof_steps=925 | tactic_size=1
+Benchmarks/Basic/Static semantics correctness: Assignment 9,user,proved,934,timeout=60000 | QE=295 | RCF=0 | proof_steps=490 | tactic_size=1
+Benchmarks/Basic/Dynamics: Cascaded,user,proved,10997,timeout=60000 | QE=545 | RCF=0 | proof_steps=1657 | tactic_size=1
+Benchmarks/Basic/Dynamics: Single integrator time,user,proved,558,timeout=60000 | QE=224 | RCF=0 | proof_steps=164 | tactic_size=1
+Benchmarks/Basic/Dynamics: Single integrator,user,proved,535,timeout=60000 | QE=182 | RCF=0 | proof_steps=152 | tactic_size=1
+Benchmarks/Basic/Dynamics: Double integrator,user,proved,1420,timeout=60000 | QE=468 | RCF=0 | proof_steps=1330 | tactic_size=1
+Benchmarks/Basic/Dynamics: Triple integrator,user,proved,1707,timeout=60000 | QE=566 | RCF=0 | proof_steps=1054 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (1),user,proved,976,timeout=60000 | QE=328 | RCF=0 | proof_steps=318 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (2),user,proved,962,timeout=60000 | QE=332 | RCF=0 | proof_steps=318 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential decay (3),user,proved,1008,timeout=60000 | QE=375 | RCF=0 | proof_steps=377 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (1),user,proved,750,timeout=60000 | QE=190 | RCF=0 | proof_steps=307 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (2),user,proved,1048,timeout=60000 | QE=270 | RCF=0 | proof_steps=523 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (4),user,proved,1031,timeout=60000 | QE=455 | RCF=0 | proof_steps=335 | tactic_size=1
+Benchmarks/Basic/Dynamics: Exponential growth (5),user,proved,9944,timeout=60000 | QE=220 | RCF=0 | proof_steps=507 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (1),user,proved,1043,timeout=60000 | QE=329 | RCF=0 | proof_steps=678 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (2),user,proved,2726,timeout=60000 | QE=911 | RCF=0 | proof_steps=3517 | tactic_size=1
+Benchmarks/Basic/Dynamics: Rotational dynamics (3),user,proved,1789,timeout=60000 | QE=728 | RCF=0 | proof_steps=2245 | tactic_size=1
+Benchmarks/Basic/Dynamics: Spiral to equilibrium,user,proved,1285,timeout=60000 | QE=385 | RCF=0 | proof_steps=782 | tactic_size=1
+Benchmarks/Basic/Dynamics: Open cases,user,proved,1459,timeout=60000 | QE=503 | RCF=0 | proof_steps=837 | tactic_size=1
+Benchmarks/Basic/Dynamics: Closed cases,user,proved,691,timeout=60000 | QE=268 | RCF=0 | proof_steps=426 | tactic_size=1
+Benchmarks/Basic/Dynamics: Conserved quantity,user,proved,946,timeout=60000 | QE=397 | RCF=0 | proof_steps=513 | tactic_size=1
+Benchmarks/Basic/Dynamics: Darboux equality,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Fractional Darboux equality,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Darboux inequality,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Bifurcation,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators,user,proved,11891,timeout=60000 | QE=299 | RCF=0 | proof_steps=1576 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 1,user,proved,844,timeout=60000 | QE=311 | RCF=0 | proof_steps=423 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 2,user,proved,794,timeout=60000 | QE=298 | RCF=0 | proof_steps=454 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 4,user,proved,833,timeout=60000 | QE=332 | RCF=0 | proof_steps=452 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear 5,user,proved,801,timeout=60000 | QE=276 | RCF=0 | proof_steps=387 | tactic_size=1
+Benchmarks/Basic/Dynamics: Riccati,user,proved,815,timeout=60000 | QE=297 | RCF=0 | proof_steps=274 | tactic_size=1
+Benchmarks/Basic/Dynamics: Nonlinear differential cut,user,proved,3272,timeout=60000 | QE=611 | RCF=0 | proof_steps=927 | tactic_size=1
+Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism,user,timeout,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/STTT Tutorial: Example 1,user,proved,586,timeout=60000 | QE=234 | RCF=0 | proof_steps=220 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 2,user,proved,1220,timeout=60000 | QE=419 | RCF=0 | proof_steps=1910 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 3a,user,proved,4841,timeout=60000 | QE=2502 | RCF=0 | proof_steps=5824 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 4a,user,proved,1182,timeout=60000 | QE=405 | RCF=0 | proof_steps=1889 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 4b,user,proved,1081,timeout=60000 | QE=343 | RCF=0 | proof_steps=1740 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 4c,user,proved,1807,timeout=60000 | QE=578 | RCF=0 | proof_steps=2185 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 5,user,proved,2967,timeout=60000 | QE=1830 | RCF=0 | proof_steps=3796 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 6,user,proved,3104,timeout=60000 | QE=1995 | RCF=0 | proof_steps=3834 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 7,user,proved,3504,timeout=60000 | QE=2347 | RCF=0 | proof_steps=3965 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 9a,user,proved,885,timeout=60000 | QE=407 | RCF=0 | proof_steps=547 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 9b,user,proved,9373,timeout=60000 | QE=2175 | RCF=0 | proof_steps=3352 | tactic_size=1
+Benchmarks/Basic/STTT Tutorial: Example 10,user,timeout,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 1 Continuous car accelerates forward,user,proved,228,timeout=60000 | QE=16 | RCF=0 | proof_steps=61 | tactic_size=1
+Benchmarks/Basic/LICS: Example 2 Single car drives forward,user,proved,1119,timeout=60000 | QE=373 | RCF=0 | proof_steps=1791 | tactic_size=1
+Benchmarks/Basic/LICS: Example 3a event-triggered car drives forward,user,proved,1199,timeout=60000 | QE=387 | RCF=0 | proof_steps=1843 | tactic_size=1
+Benchmarks/Basic/LICS: Example 4a safe stopping of time-triggered car,user,proved,2936,timeout=60000 | QE=1848 | RCF=0 | proof_steps=3486 | tactic_size=1
+Benchmarks/Basic/LICS: Example 4b progress of time-triggered car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 4c relative safety of time-triggered car,user,proved,3291,timeout=60000 | QE=1955 | RCF=0 | proof_steps=5003 | tactic_size=1
+Benchmarks/Basic/LICS: Example 5 Controllability Equivalence,user,proved,3548,timeout=60000 | QE=737 | RCF=0 | proof_steps=2979 | tactic_size=1
+Benchmarks/Basic/LICS: Example 6 MPC Acceleration Equivalence,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 7 Model-Predictive Control Design Car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/Static semantics correctness: Assignment 1,Scripted proof,proved,186,timeout=60000 | QE=135 | RCF=0 | proof_steps=38 | tactic_size=3
+Benchmarks/Basic/Static semantics correctness: Assignment 2,Scripted proof,proved,266,timeout=60000 | QE=144 | RCF=0 | proof_steps=75 | tactic_size=5
+Benchmarks/Basic/Static semantics correctness: Assignment 3,Scripted proof,proved,342,timeout=60000 | QE=170 | RCF=0 | proof_steps=154 | tactic_size=7
+Benchmarks/Basic/Static semantics correctness: Assignment 4,Scripted proof,proved,755,timeout=60000 | QE=269 | RCF=0 | proof_steps=413 | tactic_size=3
+Benchmarks/Basic/Static semantics correctness: Assignment 5,Scripted proof,proved,68,timeout=60000 | QE=0 | RCF=0 | proof_steps=28 | tactic_size=7
+Benchmarks/Basic/Static semantics correctness: Assignment 6,Scripted proof,proved,254,timeout=60000 | QE=160 | RCF=0 | proof_steps=140 | tactic_size=19
+Benchmarks/Basic/Static semantics correctness: Assignment 7,Scripted proof,proved,1018,timeout=60000 | QE=397 | RCF=0 | proof_steps=765 | tactic_size=15
+Benchmarks/Basic/Static semantics correctness: Assignment 8,Scripted proof,proved,959,timeout=60000 | QE=341 | RCF=0 | proof_steps=794 | tactic_size=15
+Benchmarks/Basic/Static semantics correctness: Assignment 9,Scripted proof,proved,865,timeout=60000 | QE=286 | RCF=0 | proof_steps=456 | tactic_size=13
+Benchmarks/Basic/Dynamics: Cascaded,Scripted proof,proved,11247,timeout=60000 | QE=960 | RCF=0 | proof_steps=1511 | tactic_size=8
+Benchmarks/Basic/Dynamics: Single integrator time,Scripted proof,proved,580,timeout=60000 | QE=187 | RCF=0 | proof_steps=164 | tactic_size=2
+Benchmarks/Basic/Dynamics: Single integrator,Scripted proof,proved,585,timeout=60000 | QE=173 | RCF=0 | proof_steps=152 | tactic_size=2
+Benchmarks/Basic/Dynamics: Double integrator,Scripted proof,proved,1430,timeout=60000 | QE=481 | RCF=0 | proof_steps=1332 | tactic_size=2
+Benchmarks/Basic/Dynamics: Triple integrator,Scripted proof,proved,1578,timeout=60000 | QE=542 | RCF=0 | proof_steps=1069 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential decay (1),Scripted proof,proved,745,timeout=60000 | QE=240 | RCF=0 | proof_steps=144 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential decay (2),Scripted proof,proved,770,timeout=60000 | QE=252 | RCF=0 | proof_steps=144 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential decay (3),Scripted proof,proved,781,timeout=60000 | QE=310 | RCF=0 | proof_steps=199 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential growth (1),Scripted proof,proved,616,timeout=60000 | QE=188 | RCF=0 | proof_steps=194 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential growth (2),Scripted proof,proved,1093,timeout=60000 | QE=297 | RCF=0 | proof_steps=526 | tactic_size=2
+Benchmarks/Basic/Dynamics: Exponential growth (4),Scripted proof,proved,6396,timeout=60000 | QE=441 | RCF=0 | proof_steps=165 | tactic_size=3
+Benchmarks/Basic/Dynamics: Exponential growth (5),Scripted proof,proved,878,timeout=60000 | QE=319 | RCF=0 | proof_steps=333 | tactic_size=2
+Benchmarks/Basic/Dynamics: Rotational dynamics (1),Scripted proof,proved,1212,timeout=60000 | QE=645 | RCF=0 | proof_steps=796 | tactic_size=2
+Benchmarks/Basic/Dynamics: Rotational dynamics (2),Scripted proof,proved,4543,timeout=60000 | QE=2866 | RCF=0 | proof_steps=7829 | tactic_size=2
+Benchmarks/Basic/Dynamics: Rotational dynamics (3),Scripted proof,proved,1557,timeout=60000 | QE=759 | RCF=0 | proof_steps=1719 | tactic_size=2
+Benchmarks/Basic/Dynamics: Spiral to equilibrium,Scripted proof,proved,1010,timeout=60000 | QE=429 | RCF=0 | proof_steps=643 | tactic_size=2
+Benchmarks/Basic/Dynamics: Open cases,Scripted proof,proved,1223,timeout=60000 | QE=515 | RCF=0 | proof_steps=593 | tactic_size=2
+Benchmarks/Basic/Dynamics: Closed cases,Scripted proof,proved,719,timeout=60000 | QE=228 | RCF=0 | proof_steps=398 | tactic_size=2
+Benchmarks/Basic/Dynamics: Conserved quantity,Scripted proof,proved,1087,timeout=60000 | QE=397 | RCF=0 | proof_steps=513 | tactic_size=2
+Benchmarks/Basic/Dynamics: Darboux equality,Scripted proof,proved,835,timeout=60000 | QE=296 | RCF=0 | proof_steps=506 | tactic_size=2
+Benchmarks/Basic/Dynamics: Fractional Darboux equality,Scripted proof,proved,6037,timeout=60000 | QE=177 | RCF=0 | proof_steps=262 | tactic_size=3
+Benchmarks/Basic/Dynamics: Darboux inequality,Scripted proof,proved,380,timeout=60000 | QE=173 | RCF=0 | proof_steps=215 | tactic_size=3
+Benchmarks/Basic/Dynamics: Bifurcation,Scripted proof,proved,2288,timeout=60000 | QE=1780 | RCF=0 | proof_steps=1500 | tactic_size=35
+Benchmarks/Basic/Dynamics: Parametric switching between two different damped oscillators,Scripted proof,proved,8835,timeout=60000 | QE=2075 | RCF=0 | proof_steps=1775 | tactic_size=11
+Benchmarks/Basic/Dynamics: Nonlinear 1,Scripted proof,proved,886,timeout=60000 | QE=293 | RCF=0 | proof_steps=423 | tactic_size=2
+Benchmarks/Basic/Dynamics: Nonlinear 2,Scripted proof,proved,877,timeout=60000 | QE=330 | RCF=0 | proof_steps=454 | tactic_size=2
+Benchmarks/Basic/Dynamics: Nonlinear 4,Scripted proof,proved,957,timeout=60000 | QE=362 | RCF=0 | proof_steps=452 | tactic_size=2
+Benchmarks/Basic/Dynamics: Nonlinear 5,Scripted proof,proved,796,timeout=60000 | QE=293 | RCF=0 | proof_steps=387 | tactic_size=2
+Benchmarks/Basic/Dynamics: Riccati,Scripted proof,proved,899,timeout=60000 | QE=305 | RCF=0 | proof_steps=274 | tactic_size=2
+Benchmarks/Basic/Dynamics: Nonlinear differential cut,Scripted proof,proved,1355,timeout=60000 | QE=459 | RCF=0 | proof_steps=959 | tactic_size=2
+Benchmarks/Basic/Affine: Overdamped Door Closing Mechanism,Scripted proof,proved,9149,timeout=60000 | QE=1885 | RCF=0 | proof_steps=4812 | tactic_size=16
+Benchmarks/Basic/STTT Tutorial: Example 1,Scripted proof,proved,680,timeout=60000 | QE=237 | RCF=0 | proof_steps=220 | tactic_size=2
+Benchmarks/Basic/STTT Tutorial: Example 2,Scripted proof,proved,323,timeout=60000 | QE=0 | RCF=0 | proof_steps=182 | tactic_size=11
+Benchmarks/Basic/STTT Tutorial: Example 3a,Scripted proof,proved,4619,timeout=60000 | QE=2327 | RCF=0 | proof_steps=5825 | tactic_size=8
+Benchmarks/Basic/STTT Tutorial: Example 4a,Scripted proof,proved,297,timeout=60000 | QE=0 | RCF=0 | proof_steps=143 | tactic_size=11
+Benchmarks/Basic/STTT Tutorial: Example 4b,Scripted proof,proved,271,timeout=60000 | QE=0 | RCF=0 | proof_steps=143 | tactic_size=11
+Benchmarks/Basic/STTT Tutorial: Example 4c,Scripted proof,proved,893,timeout=60000 | QE=305 | RCF=0 | proof_steps=656 | tactic_size=20
+Benchmarks/Basic/STTT Tutorial: Example 5,Scripted proof,proved,3095,timeout=60000 | QE=1968 | RCF=0 | proof_steps=4038 | tactic_size=21
+Benchmarks/Basic/STTT Tutorial: Example 6,Scripted proof,proved,9148,timeout=60000 | QE=2450 | RCF=0 | proof_steps=4008 | tactic_size=19
+Benchmarks/Basic/STTT Tutorial: Example 7,Scripted proof,proved,3555,timeout=60000 | QE=2430 | RCF=0 | proof_steps=4161 | tactic_size=18
+Benchmarks/Basic/STTT Tutorial: Example 9a,Scripted proof,proved,1049,timeout=60000 | QE=478 | RCF=0 | proof_steps=590 | tactic_size=2
+Benchmarks/Basic/STTT Tutorial: Example 9b,Scripted proof,proved,2342,timeout=60000 | QE=1806 | RCF=0 | proof_steps=2180 | tactic_size=15
+Benchmarks/Basic/STTT Tutorial: Example 10,Scripted proof,proved,12230,timeout=60000 | QE=9305 | RCF=0 | proof_steps=12838 | tactic_size=74
+Benchmarks/Basic/LICS: Example 1 Continuous car accelerates forward,Scripted proof,proved,224,timeout=60000 | QE=0 | RCF=0 | proof_steps=77 | tactic_size=5
+Benchmarks/Basic/LICS: Example 2 Single car drives forward,Scripted proof,proved,267,timeout=60000 | QE=0 | RCF=0 | proof_steps=148 | tactic_size=11
+Benchmarks/Basic/LICS: Example 3a event-triggered car drives forward,Scripted proof,proved,309,timeout=60000 | QE=0 | RCF=0 | proof_steps=148 | tactic_size=11
+Benchmarks/Basic/LICS: Example 4a safe stopping of time-triggered car,Scripted proof,proved,2816,timeout=60000 | QE=1866 | RCF=0 | proof_steps=3473 | tactic_size=11
+Benchmarks/Basic/LICS: Example 4b progress of time-triggered car,user,failed,-1,timeout=60000 | QE=-1 | RCF=-1 | proof_steps=-1 | tactic_size=-1
+Benchmarks/Basic/LICS: Example 4c relative safety of time-triggered car,Scripted proof,proved,3329,timeout=60000 | QE=2063 | RCF=0 | proof_steps=5076 | tactic_size=13
+Benchmarks/Basic/LICS: Example 5 Controllability Equivalence,Scripted proof,proved,2711,timeout=60000 | QE=1683 | RCF=0 | proof_steps=3138 | tactic_size=7
+Benchmarks/Basic/LICS: Example 6 MPC Acceleration Equivalence,Scripted proof,proved,9391,timeout=60000 | QE=2609 | RCF=0 | proof_steps=9594 | tactic_size=26
+Benchmarks/Basic/LICS: Example 7 Model-Predictive Control Design Car,Scripted proof,proved,2406,timeout=60000 | QE=1460 | RCF=0 | proof_steps=1891 | tactic_size=43
